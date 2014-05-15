@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rank: MyString
+  num: 1
+  type: 
+  name: MyString
+  count: 1
+
+two:
+  rank: MyString
+  num: 1
+  type: 
+  name: MyString
+  count: 1
