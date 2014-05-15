@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140515142002) do
+ActiveRecord::Schema.define(version: 20140515155352) do
 
   create_table "cards", force: true do |t|
     t.string   "rank"
     t.integer  "num"
-    t.string   "type"
+    t.string   "cardtype"
     t.string   "name"
     t.integer  "count"
     t.datetime "created_at"

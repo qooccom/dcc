@@ -12,24 +12,33 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :rank %><br>
-    <%= f.text_field :rank %>
+    <%= f.label :rank %>
+    <%= f.select :rank, ['SR', 'R', 'N'], selected: 'N' %>
   </div>
   <div class="field">
-    <%= f.label :num %><br>
-    <%= f.number_field :num %>
+    <%= f.label :num %>
+    <%= f.number_field :num, size: 4 %>
   </div>
   <div class="field">
-    <%= f.label :type %><br>
-    <%= f.text_field :type %>
+    <%= f.label :cardtype %>
+    <%= f.select :cardtype,
+	['Gold sign card', 'Summer memorial card', 'Summer sky card',
+	 'Rainbow & Quartet card', 'Light up card', 'Joint tower card',
+	 'Modern stripe card', 'Milky puzzle card', 'Sparkling card',
+	 'Newspaper card', 'Elegant couch card', 'Pop color card'],
+	selected: 'Joint tower card' %>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name %>
+    <%= f.select :name,
+	['一十木音也', '聖川真斗', '四ノ宮那月',
+	 '一ノ瀬トキヤ', '神宮寺レン', '来栖翔', '愛島セシル',
+	 '寿嶺二', '黒崎蘭丸', '美風藍', 'カミュ',
+	 '月宮林檎', '日向龍也', '月宮林檎／日向龍也', '7人集合'] %>
   </div>
   <div class="field">
-    <%= f.label :count %><br>
-    <%= f.number_field :count %>
+    <%= f.label :count %>
+    <%= f.number_field :count, size: 4 %>
   </div>
   <div class="actions">
     <%= f.submit %>
